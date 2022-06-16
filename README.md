@@ -1,3 +1,24 @@
-#   Magic Pencil
+#   Blackboard Note
 
-##Demonstration
+##motivation
+
+
+
+##abstract
+
+
+
+
+##technique and hardware
+
+
+##main structure
+
+
+##setup
+
+
+
+##demo
+
+
