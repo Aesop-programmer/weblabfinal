@@ -36,10 +36,29 @@ hardware:
 ![image](https://user-images.githubusercontent.com/55504676/174087611-7db52f0f-6547-4480-80e8-043ad429385e.png)
 
 
-## setup
+## how to run
+
+- install wi_senddata.ino on esp32
+- Install related python packages on jetson nano
+```bash
+$ python3 -m pip install -r requirements.txt
+```
+- Run the eclipse mosquitto docker container on jetson nano
+```bash
+$ docker run -d -it -p 1883:1883 -v $(pwd)/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
+```
+- Run the IMUtrackingcode and publisher on jetson nano
+```bash
+$ python3 final_wif.py
+```
+- Run the subscriber to see motion
+```bash
+$ python3 subscriber.py --ip [jetson nano ip address] -- port 1883
+```
+## how to use
 1. user take esp32 to write
 2. push button to end writing
-3. watch handwritten on computer
+4. watch handwritten on computer
 
 
 
