@@ -64,6 +64,8 @@ $ python3 subscriber.py --ip [jetson nano ip address] -- port 1883
 
 ## demo
 
-
+## reference
+- https://github.com/johnnylord/eclipse-mosquitto
+- https://github.com/LibofRelax/IMU-Position-Tracking
 
 
