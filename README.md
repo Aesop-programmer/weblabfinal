@@ -9,7 +9,7 @@ Many teachers like to teach with blackboard. However, it's tough for students to
 
 
 
-## abstract
+## Abstract
 Blackboard Note讓使用者透過手持裝有九軸感測器的裝置進行書寫，達成同時將書寫文字記錄成電子形式的功能。
 
 Blackboard Note let users can write by using mpu9250, making handwritten into digital stored data
@@ -19,12 +19,12 @@ Blackboard Note let users can write by using mpu9250, making handwritten into di
 
 
 ## Technique and Hardware
-technique:
+Technique:
 - Python
 - Arduino IDE
 - MQTT
 
-hardware:
+Hardware:
 - Jetson Nano
 - ESP32
 - MPU9250
