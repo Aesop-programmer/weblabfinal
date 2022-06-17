@@ -1,6 +1,6 @@
-#   Blackboard Note
+# Blackboard Note
 
-## motivation
+## Motivation
 
 
 
@@ -18,7 +18,7 @@ Blackboard Note let users can write by using mpu9250, making handwritten into di
 
 
 
-## technique and hardware
+## Technique and Hardware
 technique:
 - Python
 - Arduino IDE
@@ -32,11 +32,11 @@ hardware:
 
 
 
-## main structure
+## Main Structure
 ![image](https://user-images.githubusercontent.com/55504676/174087611-7db52f0f-6547-4480-80e8-043ad429385e.png)
 
 
-## how to run
+## How to Run
 
 - install wi_senddata.ino on ESP32
 - Install related python packages on Jetson Nano
@@ -61,16 +61,17 @@ $ python3 -m pip install -r requirementsClient.txt
 ```bash
 $ python3 subscriber.py --ip [jetson nano ip address] -- port 1883
 ```
-## how to use
+## How to Use
 1. User take ESP32 to write
 2. Push button to end writing
 4. Watch handwritten on computer
 
 
 
-## demo
+## Demo
 https://www.youtube.com/watch?v=FaFhwM_qoy4
-## reference
+
+## Reference
 - https://github.com/johnnylord/eclipse-mosquitto
 - https://github.com/LibofRelax/IMU-Position-Tracking
 
