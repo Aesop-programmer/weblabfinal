@@ -1,2 +1,6 @@
 paho-mqtt==1.5.1
-psutil==5.8.0
+numpy==1.13.3
+numba
+matplotlib
+pandas
+scipy

@@ -4,7 +4,7 @@
 
 
 
-Many teachers like to teach with blackboard. However, it's tough for students to listen and take notes simultaneously. Therefore,We hope students can learn focusly with notes automatically recorded. 
+Many teachers like to teach with blackboard. However, it's tough for students to listen and take notes simultaneously. Therefore, we hope students can learn focusly with notes automatically recorded. 
 
 
 
@@ -20,14 +20,14 @@ Blackboard Note let users can write by using mpu9250, making handwritten into di
 
 ## technique and hardware
 technique:
-- python
-- arduino ide
+- Python
+- Arduino IDE
 - MQTT
 
 hardware:
-- jetson nano
-- esp32
-- mpu9250
+- Jetson Nano
+- ESP32
+- MPU9250
   
 
 
@@ -38,27 +38,33 @@ hardware:
 
 ## how to run
 
-- install wi_senddata.ino on esp32
-- Install related python packages on jetson nano
+- install wi_senddata.ino on ESP32
+- Install related python packages on Jetson Nano
 ```bash
 $ python3 -m pip install -r requirements.txt
 ```
-- Run the eclipse mosquitto docker container on jetson nano
+- Run the eclipse mosquitto docker container on Jetson Nano
 ```bash
 $ docker run -d -it -p 1883:1883 -v $(pwd)/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
 ```
-- Run the IMUtrackingcode and publisher on jetson nano
+- Run the IMUtrackingcode and publisher on Jetson Nano
 ```bash
 $ python3 final_wif.py
 ```
-- Run the subscriber to see motion
+
+
+- Install related python packages on pc
+```bash
+$ python3 -m pip install -r requirements.txt
+```
+- Run the subscriber on pc to see motion
 ```bash
 $ python3 subscriber.py --ip [jetson nano ip address] -- port 1883
 ```
 ## how to use
-1. user take esp32 to write
-2. push button to end writing
-4. watch handwritten on computer
+1. User take ESP32 to write
+2. Push button to end writing
+4. Watch handwritten on computer
 
 
 
