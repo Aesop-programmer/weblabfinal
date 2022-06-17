@@ -55,7 +55,7 @@ $ python3 final_wif.py
 
 - Install related python packages on pc
 ```bash
-$ python3 -m pip install -r requirements.txt
+$ python3 -m pip install -r requirementsClient.txt
 ```
 - Run the subscriber on pc to see motion
 ```bash
