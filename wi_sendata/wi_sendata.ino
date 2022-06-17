@@ -3,8 +3,8 @@
 #include "MPU9250.h"
 /* WiFi network name and password */
 MPU9250 mpu;
-char * ssid = "Ven_peap";
-char * pwd = "";
+char * ssid = "Your Wi-Fi name";
+char * pwd = "password";
 
 // IP address to send UDP data to.
 // it can be ip address of the server or 
